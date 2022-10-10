@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css"
+    media="screen and (min-whidth: 600px)">
+    <link rel="stylesheet" href="./css/app.css" 
+    media="screen and (min-width: 870px)">
+
+
+</head>
+
+
+<body>
+    <!-- // ENCABEZADO MENU -->
+    <header class="header">
+        <figure class="figcabeza">
+            <img class="figcabeza.icon" src="...." alt="iconojuego">
+        </figure>
+        <h1 class="centrocabeza">Tres en raya</h1>
+    </header>
+
+    <section class="section">
+        <!-- SECCIÓN IZQ PANTALLA JUGADOR 1 -->
+
+        <aside class="section__aside">
+            <h2 class="section__aside-h2" id="player1_title">Jugador 1</h2>
+            <picture class="section__aside-picture">
+                <img class="emoji" src="./images/player 1 gana.png" alt="Inicial" id="img_player1">
+            </picture>
+            <div class="section__div">
+                <p class="section__div-p">Puntuación:</p>
+                <p class="section__div-number-score" id="score1">0</p>
+            </div>
+        </aside>
+
+        <!-- TABLERO -->
+
+        <main class="section__main">
+            <table class="section__main-table">
+                <tr>
+                    <td id="c1_1">
+                        <button class="button_sel button_select" onclick="active_c_11()" type="button"
+                            id="button_active1"></button>
+                    </td>
+
+                    <td id="c1_2">
+                        <button class="button_sel button_select" onclick="active_c_12()" type="button"
+                            id="button_active2"></button>
+                    </td>
+
+                    <td id="c1_3">
+                        <button class="button_sel button_select" onclick="active_c_13()" type="button"
+                            id="button_active3"></button>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td id="c2_1">
+                        <button class="button_sel button_select" onclick="active_c_21()" type="button"
+                            id="button_active4"></button>
+                    </td>
+
+                    <td id="c2_2">
+                        <button class="button_sel button_select" onclick="active_c_22()" type="button"
+                            id="button_active5"></button>
+                    </td>
+
+                    <td id="c2_3">
+                        <button class="button_sel button_select" onclick="active_c_23()" type="button"
+                            id="button_active6"></button>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td id="c3_1">
+                        <button class="button_sel button_select" onclick="active_c_31()" type="button"
+                            id="button_active7"></button>
+                    </td>
+
+                    <td id="c3_2">
+                        <button class="button_sel button_select" onclick="active_c_32()" type="button"
+                            id="button_active8"></button>
+                    </td>
+
+                    <td id="c3_3">
+                        <button class="button_sel button_select" onclick="active_c_33()" type="button"
+                            id="button_active9"></button>
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </main>
+
+        <!-- SECCIÓN MOVIL -->
+
+        <div class="section__div-mvl">
+            <div clas="player-mvl">
+                <p class="player-mvl-p">Jugador 1</p>
+                <p id="score_1m">0</p>
+
+            </div>
+            <div class="section__div-mvl">
+                <div clas="player-mvl">
+                    <p class="player-mvl-p">Jugador 2</p>
+                    <p id="score_2m">0</p>
+
+                </div>
+
+            </div>
+            <!-- SECCIÓN DER PANTALLA JUGADOR 2 -->
+            <aside class="section__aside">
+                <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
+                <picture class="section__aside-picture">
+                    <img class="emoji" src="./images/jugador 2 pierde.jpg" alt="Inicial" id="img_player2">
+                </picture>
+                <div class="section__div">
+                    <p class="section__div-p">Puntuación:</p>
+                    <p class="section__div-number-score" id="score2">0</p>
+                </div>
+            </aside>
+    </section>
+ 
+    <!-- MODAL VENTANA -->
+    <div class="modal-container">
+        <div class="modal modal-close">
+            <img src="./images/player 2 gana.png" alt="Gana inicio de partida">
+            <div class="modal-text">
+                <h1 id="playerInit"></h1>
+            </div>
+            <button class="button_start star_button" type="button" id="start">
+                Comenzar
+            </button>
+        </div>
+
+
+    </div>
+
+    <!-- FOOTER PARTE BAJA DE LA PANTALLA BOTONES -->
+
+    <footer class="footer">
+        <button type="button" class="button_start" id="ranGame">
+            Sortear partida
+        </button>
+
+        <button type="button" onclick="nextGame()" class="button_start" id="nextButton" disabled>
+            Siguiente Partida
+        </button>
+
+        <button type="button" onclick="resetButton()" class="button_start" id="cleanButton" disabled>
+            Reiniciar
+        </button>
+
+    </footer>
+
+
+
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

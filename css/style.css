@@ -1,0 +1,215 @@
+/* PARA TOMAR TODOS LOS CAMPOS Y LLEVARLOS AL MÍNIMO */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+    /*rem --> 1 rem = 10 px*/
+}
+
+body{
+    background-color: aquamarine;
+    min-width: 320px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    margin-right: auto;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+ 
+
+}
+
+.header__h1{
+    font-family: 2rem;
+    letter-spacing: 3px;
+    margin: auto;
+    color: aliceblue;
+    width: 60%;
+    text-align: center;
+}
+
+.section{
+    width: 100%;
+
+    height: calc(100vh-100px);
+
+    background-color: rgb(70, 149, 70);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.section__aside{
+    display: none;
+}
+
+.section__main{
+    width: 100%;
+    height: 70%;
+    border: 6px solid rgb(180, 38, 38);
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.section__main-table {
+    width: 100%;
+    height: 100%;
+    
+}
+.section__main-table td{
+    text-align: center;
+    font-size: 4.5rem;
+    height: 10px;
+    width: 33.33333%;
+}
+.section__main-table tr{
+    height:33.33333%;
+   
+}
+
+#c1_1, #c1_2, #c2_1,#c2_2, #c3_1, #c3_2{
+    border-right: 10px solid white;
+
+}
+#c1_1, #c1_2,#c1_3, #c2_1, #c2_2 ,#c2_3{
+    border-bottom: 10px solid white;
+}
+
+
+.button_sel{
+    display: block;
+}
+
+.button_select{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 4.5rem;
+}
+
+.section__div-mvl{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.player-mvl-p{
+    font-size: 1.8rem;
+}
+
+#score_1, #score_2, #score_1m, #score2m{
+    font-size: 3rem;
+}
+
+.player-mvl{
+    width: 40%;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.472);
+    color: white;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_start{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5ce22;
+    color: #010703;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+#nextButton{
+background-color: grey;
+cursor:default ;
+}
+#cleanButton{
+background-color: grey;
+cursor: default;
+}
+
+.modal-container{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.modal{
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+}
+
+.modal-close{
+    transform: translateY(-200%);
+
+}
+
+.modal-img{
+    width: 30%;
+}
+
+.modal-text{
+    font-size: 1.54rem;
+    color: tomato;
+    text-align: center;
+
+}
+
+.start_button{
+    width: 120px;
+    font-size: 2rem;
+
+}
