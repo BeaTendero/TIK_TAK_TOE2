@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tres en raya</title>
-    <link rel="stylesheet" href="./css/style.css"> 
-    <link rel="stylesheet" href="./css/style2.css" media="screen and (min-whidth: 600px)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css" media="screen and (min-whidth: 500px)">
     <link rel="stylesheet" href="./css/app.css" media="screen and (min-width: 870px)">
 
 
@@ -17,14 +17,17 @@
 <body>
     <!-- // ENCABEZADO MENU -->
     <header class="header">
+
         <figure class="figcabeza">
-            <img class="figcabeza.icon" src="...." alt="iconojuego">
+            <img class="figcabeza_icon" src="...." alt="iconojuego">
         </figure>
-        <h1 class="centrocabeza">Tres en raya</h1>
+
+        <h1 class="header__h1">Tres en raya</h1>
     </header>
 
+    <!-- SECCIÓN IZQ PANTALLA JUGADOR 1 -->
     <section class="section">
-        <!-- SECCIÓN IZQ PANTALLA JUGADOR 1 -->
+
 
         <aside class="section__aside">
 
@@ -44,6 +47,7 @@
         <!-- TABLERO -->
 
         <main class="section__main">
+
             <table class="section__main-table">
                 <tr>
                     <td id="c1_1">
@@ -101,10 +105,25 @@
 
             </table>
 
+            <!-- SECCIÓN DER PANTALLA JUGADOR 2 -->
 
+            <aside class="section__aside">
+                <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
+                <picture class="section__aside-picture">
+                    <img class="emoji" src="./images/jugador 2 pierde.jpg" alt="Inicial" id="img_player2">
+                </picture>
+
+                <div class="section__div">
+                    <p class="section__div-p">Puntuación:</p>
+                    <p class="section__div-number-score" id="score2">0</p>
+                </div>
+
+            </aside>
         </main>
 
+
         <!-- SECCIÓN MOVIL -->
+
 
         <div class="section__div-mvl">
 
@@ -113,10 +132,6 @@
                 <p id="score_1m">0</p>
 
             </div>
-            
-        </div>
-
-        <div class="section__div-mvl">
 
             <div class="player-mvl">
                 <p class="player-mvl-p">Jugador 2</p>
@@ -125,18 +140,8 @@
             </div>
 
         </div>
-        <!-- SECCIÓN DER PANTALLA JUGADOR 2 -->
-        <aside class="section__aside">
-            <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
-            <picture class="section__aside-picture">
-                <img class="emoji" src="./images/jugador 2 pierde.jpg" alt="Inicial" id="img_player2">
-            </picture>
-            <div class="section__div">
-                <p class="section__div-p">Puntuación:</p>
-                <p class="section__div-number-score" id="score2">0</p>
-            </div>
 
-        </aside>
+
 
 
 
@@ -178,6 +183,7 @@
 
 
     <script src="./JS/main.js"></script>
+
 </body>
 
 </html>
