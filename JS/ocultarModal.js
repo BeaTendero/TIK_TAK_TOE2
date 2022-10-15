@@ -2,4 +2,17 @@
 function ocultarModal(){
 let modal = document.querySelectorAll(".modal")[0];
 let modal_container = document.querySelectorAll(".modal-container")[0];
+modal.classList.toggle("modal-close");
+
+////    para conseguir unos segundos y apreciar asi la imagen  ////
+
+setTimeout(
+    function (){
+        modal_container.style.opacity = "0";
+        modal_container.style.visibility = "hidden";
+    },
+1000)
+
 }
+
+export default ocultarModal;

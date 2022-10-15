@@ -164,6 +164,9 @@ body{
 #ranGame {
     cursor: pointer;
 }
+#start{
+    cursor:pointer;
+}
 
 #nextButton{
 background-color: grey;
