@@ -1,3 +1,4 @@
+import iniciarJuego from "./iniciojuego.js";
 
 function random(nuevoJuego) {
     var player1;
@@ -18,7 +19,12 @@ function random(nuevoJuego) {
     modal_container.style.opacity = "1";
     modal_container.style.visibility = "visible";
     modal.classList.toggle("modal-close");
+
+
     iniciarJuego(nuevoJuego, player1);
+
+
+    
     const button_ranGame = document.getElementById("ranGame");
     button_ranGame.disable = true;
     button_ranGame.style.backgroundColor = "gray";
@@ -29,3 +35,5 @@ function random(nuevoJuego) {
     button_reset.style.cursor = "pointer";
     return player1;    
 }
+
+export default random;

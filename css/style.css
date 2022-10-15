@@ -161,10 +161,15 @@ body{
 
 }
 
+#ranGame {
+    cursor: pointer;
+}
+
 #nextButton{
 background-color: grey;
 cursor:default ;
 }
+
 #cleanButton{
 background-color: grey;
 cursor: default;
@@ -202,7 +207,7 @@ cursor: default;
 
 }
 
-.modal-img{
+.modal img{
     width: 30%;
 }
 
