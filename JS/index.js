@@ -4,9 +4,15 @@ import ocultarModal from "./ocultarModal.js";
 var player1; //True o False
 var nuevoJuego = false; // Primer Juego
 var contador_selecciones = 0;
-var ganador; //devolverá 4 estados (1ganaJ1,2ganaJ2,3empatereiniciapartida,4nohayganador)
+var ganador = 0;; //estados (1ganaJ1,2ganaJ2,3empatereiniciapartida,nohayganador)
 var score1 = 0;
 var score2 = 0;
+
+var matrix =[
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+];
 
 const sortearPartida = document.querySelector("#ranGame")
 const comenzar = document.querySelector('#start');
