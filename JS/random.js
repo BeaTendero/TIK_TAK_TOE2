@@ -1,14 +1,14 @@
 
-function random (nuevoJuego){
+function random(nuevoJuego) {
     var player1;
-    const ranMatch = Math.floor(Math.random()*2) +1; //1 o 2
-    const playerInit = document.getElementById ("playerInit");
+    const ranMatch = Math.floor(Math.random() * 2) + 1; //1 o 2
+    const playerInit = document.getElementById("playerInit");
 
-    if(ranMatch === 1 ){
-        playerInit,innerText = "Inicia el Jugador 1"
+    if (ranMatch === 1) {
+        playerInit, innerText = "Inicia el Jugador 1"
         player1 = true;
     }
-    else{
+    else {
         playerInit.innerText = "Inicia el Jugador 2"
         player1 = false;
     }
@@ -18,7 +18,14 @@ function random (nuevoJuego){
     modal_container.style.opacity = "1";
     modal_container.style.visibility = "visible";
     modal.classList.toggle("modal-close");
-    iniciarJuego(nuevoJuego , player1);
-
-    
+    iniciarJuego(nuevoJuego, player1);
+    const button_ranGame = document.getElementById("ranGame");
+    button_ranGame.disable = true;
+    button_ranGame.style.backgroundColor = "gray";
+    button_ranGame.cursor = "default";
+    const button_reset = document.getElementById("cleanButton");
+    button_reset.disable = false; ///PARA ACTIVAR EL BOTÓN///
+    button_reset.style.backgroundColor = "#f5ce22";
+    button_reset.style.cursor = "pointer";
+    return player1;    
 }
