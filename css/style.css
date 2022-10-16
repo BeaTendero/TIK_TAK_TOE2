@@ -10,11 +10,13 @@
 html {
     font-size: 62.5%;
     /*rem --> 1 rem = 10 px*/
+
 }
 
 body{
     background-color: aquamarine;
     min-width: 320px;
+   
 }
 
 .header {
