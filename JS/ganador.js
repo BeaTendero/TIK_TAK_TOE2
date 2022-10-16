@@ -17,6 +17,44 @@ function winPlayer1 (score1){
 
     const nextButton = document.getElementById("nextButton");
     nextButton.disabled = false;
-    nextButton.style.backgroundColor = "#f5ce22"
-    
+    nextButton.style.backgroundColor = "#f5ce22";
+    nextButton.style.cursor ="pointer";
+
+    for(var i =1; i < 10 ; i++){
+        let string = "button_active"+i;
+        document.getElementById(string).disabled = true;
+    }
+
 }
+
+function winPlayer2 (score2){
+    const img_player1 =document.getElementById("img_player1");
+    img_player1.src = "./images/player 1 pierde.png";
+    img_player1.style.width = '80%';
+
+    const img_player2 =document.getElementById("img_player2");
+    img_player1.src = "./images/player 2 gana.png";
+    img_player1.style.width = '80%';
+
+    document.getElementById("player1_title").style.fontSize ='18px';
+    document.getElementById("player2_title").style.fontSize ='18px';
+    const score_2 =document.getElementById('score_2');
+    const score_2m = document.getElementById('score_2m');
+    score_2.innerText = score2;
+    score_2m.innerText = score2;
+
+
+    const nextButton = document.getElementById("nextButton");
+    nextButton.disabled = false;
+    nextButton.style.backgroundColor = "#f5ce22";
+    nextButton.style.cursor ="pointer";
+
+    for(var i =1; i < 10 ; i++){
+        let string = "button_active"+i;
+        document.getElementById(string).disabled = true;
+    }
+
+}
+
+
+export {winPlayer1 , winPlayer2};
