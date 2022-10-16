@@ -4,8 +4,8 @@ function winPlayer1 (score1){
     img_player1.style.width = '80%';
 
     const img_player2 =document.getElementById("img_player2");
-    img_player1.src = "./images/jugador 2 pierde.jpg";
-    img_player1.style.width = '80%';
+    img_player2.src = "./images/jugador 2 pierde.jpg";
+    img_player2.style.width = '80%';
 
     document.getElementById("player1_title").style.fontSize ='18px';
     document.getElementById("player2_title").style.fontSize ='18px';
@@ -33,8 +33,8 @@ function winPlayer2 (score2){
     img_player1.style.width = '80%';
 
     const img_player2 =document.getElementById("img_player2");
-    img_player1.src = "./images/player 2 gana.png";
-    img_player1.style.width = '80%';
+    img_player2.src = "./images/player 2 gana.png";
+    img_player2.style.width = '80%';
 
     document.getElementById("player1_title").style.fontSize ='18px';
     document.getElementById("player2_title").style.fontSize ='18px';

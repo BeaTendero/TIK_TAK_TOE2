@@ -1,6 +1,11 @@
 import random from "./random.js";
 import ocultarModal from "./ocultarModal.js";
 import { winPlayer1, winPlayer2 } from "./ganador.js";
+import { boton00, boton01,boton02,
+    boton10,boton11,boton12,
+    boton20,boton21,boton22
+
+} from "./botonesTablero.js";
 
 var player1; //True o False
 var nuevoJuego = false; // Primer Juego
@@ -27,6 +32,8 @@ const activeBoton12 = document.querySelector("#button_active6");
 const activeBoton20 = document.querySelector("#button_active7");
 const activeBoton21 = document.querySelector("#button_active8");
 const activeBoton22 = document.querySelector("#button_active9");
+const siguienteJuego = document.querySelector("#nextButton");
+const botonReinicio = document.querySelector ("#cleanButton");
 
 function contadorClicks() {
     contador_selecciones += 1;
@@ -79,10 +86,126 @@ window.addEventListener("click",
 );
 
 activeBoton00.onclick = () => {
-    var resultado = boton00(player, matrix, contador_selecciones);  //MATRIX lleva el almacenaje de todo el contador llegará hasta 9//
+    var resultado = boton00(player1, matrix, contador_selecciones);  //MATRIX lleva el almacenaje de todo el contador llegará hasta 9//
     player1 = resultado[0];
     matrix = resultado[1];
     ganador = resultado[2];
     contadorClicks();
     puntaje();
+  
+}
+activeBoton01.onclick = () => {
+    var resultado = boton01(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+}
+activeBoton02.onclick = () => {
+    var resultado = boton02(player1, matrix, contador_selecciones); 
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+activeBoton10.onclick = () => {
+    var resultado = boton10(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+activeBoton11.onclick = () => {
+    var resultado = boton11(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+
+activeBoton12.onclick = () => {
+    var resultado = boton12(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+activeBoton20.onclick = () => {
+    var resultado = boton20(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+activeBoton21.onclick = () => {
+    var resultado = boton21(player1, matrix, contador_selecciones);   
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+activeBoton22.onclick = () => {
+    var resultado = boton22(player1, matrix, contador_selecciones);  
+    player1 = resultado[0];
+    matrix = resultado[1];
+    ganador = resultado[2];
+    contadorClicks();
+    puntaje();
+
+}
+
+siguienteJuego.onclick = () => {
+    ganador = 0;
+    contador_selecciones = 0 ; 
+    nuevoJuego = true;
+     matrix = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+
+    ];
+
+    const button_ranGame = document.getElementById("ranGame");
+    button_ranGame.disabled = false;
+    button_ranGame.style.backgroundColor = "f5ce22";
+    button_ranGame.style.cursor = "pointer";
+    const button_next =document.getElementById("nextButton");
+    button_next.disabled= true;
+    button_next.style.backgroundColor= "gray";
+    button_next.style.cursor = "default";
+
+    const img_player1 = document.getElementById("img_player1");
+    img_player1.src = "./images/dekuokk.png";
+    img_player1.style.width = '80%';
+
+    const img_player2 = document.getElementById("img_player2");
+    img_player2.src = "./images/bakuok.png";
+    img_player2.style.width = '80%';
+
+    for (var i=1; i<10 ; i++){
+        let string = "button_active" +i;
+        document.getElementById(string).innerText = null;
+        document.getElementById(string).disabled = true;
+        document.getElementById(string).style.cursor = "default";
+    }
+}
+
+botonReinicio.onclick = () => {
+    let option = confirm("¿Está seguro de reiniciar el Juego?")
+    if (option){
+        location.reload();
+    }
 }

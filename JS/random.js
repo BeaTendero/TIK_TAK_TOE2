@@ -30,7 +30,7 @@ function random(nuevoJuego) {
     button_ranGame.style.backgroundColor = "gray";
     button_ranGame.cursor = "default";
     const button_reset = document.getElementById("cleanButton");
-    button_reset.disable = false; ///PARA ACTIVAR EL BOTÓN///
+    button_reset.disabled = false; ///PARA ACTIVAR EL BOTÓN///
     button_reset.style.backgroundColor = "#f5ce22";
     button_reset.style.cursor = "pointer";
     return player1;    
