@@ -27,3 +27,7 @@ Cuando se quiera comenzar de cero se presiona el botón de reinicio y saltará u
 ![winner](https://user-images.githubusercontent.com/114058695/196056443-26057806-bab8-4a66-91a1-e454cd156b43.png)
 
 
+versión mvl
+
+![version mvl](https://user-images.githubusercontent.com/114058695/196056742-afb9fe0d-832d-45c6-ad0e-838cbd558f16.jpg)
+
