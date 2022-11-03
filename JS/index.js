@@ -13,6 +13,15 @@ var contador_selecciones = 0;
 var ganador = 0;; //estados (1ganaJ1,2ganaJ2,3empatereiniciapartida,nohayganador)
 var score1 = 0;
 var score2 = 0;
+const displayPlayer1 = document.getElementById("player1_title");
+const displayPlayer2 = document.getElementById("player2_title");
+const nombreJugador1 = window.sessionStorage.getItem("jugador1");
+const nombreJugador2 = window.sessionStorage.getItem("jugador2");
+
+console.log(nombreJugador1)
+
+displayPlayer1.innerHTML = nombreJugador1
+displayPlayer2.innerHTML = nombreJugador2
 
 var matrix = [
     [0, 0, 0],
@@ -203,9 +212,9 @@ siguienteJuego.onclick = () => {
     }
 }
 
-botonReinicio.onclick = () => {
-    let option = confirm("¿Está seguro de reiniciar el Juego?")
-    if (option){
-        location.reload();
-    }
-}
+// botonReinicio.onclick = () => {
+//     let option = confirm("¿Está seguro de reiniciar el Juego?")
+//     if (option){
+//         location.reload();
+//     }
+// }
