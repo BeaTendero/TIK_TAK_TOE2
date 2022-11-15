@@ -4,6 +4,8 @@ versión 2 proyecto tik tak toe
 En esta versión del proyecto quise probar a recrear el juego de una manera diferente, inspirandome en personajes de una serie de anime la cual me gusta (Boku no hero)
 intercalando imagenes en función del avance de la partida.
 
+Comenzamos en página principal , la cual insertamos los nombres marcamos Save y después accedemos a la pantalla de juego.
+
 Para comenzar la partida se le da a sortar partida el cual a traves de una función random se activa y elige a un jugador para comenzar.
 
 ![portada juego](https://user-images.githubusercontent.com/114058695/196056451-10e44460-e77e-4b4a-b983-67d15f8b3f70.jpg)
